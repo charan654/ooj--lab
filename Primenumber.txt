@@ -1,0 +1,27 @@
+import java.util.Scanner;
+  
+ public class primeNum{
+ public static void main(String args[]){
+
+Scanner s= new Scanner(System.in);
+int ref=0;
+System.out.println("Enter two numbers");
+int a=s.nextInt();
+int b=s.nextInt();
+System.out.println("The Prime Numbers are");
+for(int i=a;i<=b;i++)
+{
+ for(int j=2;j<i;j++)
+{  if(i%j==0)
+  { 
+   ref=1;  
+  }
+}  
+  if(i!=1&&ref!=1)
+   System.out.println(i);
+    ref=0;
+}
+
+
+}
+}
